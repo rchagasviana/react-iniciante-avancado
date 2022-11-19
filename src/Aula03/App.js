@@ -1,7 +1,7 @@
 import Titulo from "./Titulo";
 import Equipe from "./Equipe";
 
-function App(props) {
+function App() {
     return (
         <div>
             <Titulo texto="Aula 03 - Propriedades e Componentes" cor="blue" fonte="Fantasy"/>

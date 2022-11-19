@@ -4,19 +4,21 @@ import Botao from "./Botao";
 
 function App() {
 
-    const olaMundo =() =>{
-        alert("DEUS Seja sempre louvado!")
-    };
 
     return (
         <div>
-            <Titulo texto="Aula 04 - Eventos" cor="red" fonte="Fantasy"/>
+            <Titulo texto="Aula 05 - Funções no Evento" cor="green" fonte="Fantasy"/>
             <Equipe nome="Rafael C. Viana" dataNascimento="10-10-1990" profissao="Engenheiro de Software"/>
-            <button onClick={olaMundo}>Iniciar</button>
+
+            <button onClick={() => {
+                alert("Evento inline")
+            }}>Iniciar Evento
+            </button>
 
             <Botao nome="Começar"/>
-            <Botao nome="Cancelar"/>
+
         </div>
     );
 }
+
 export default App;
