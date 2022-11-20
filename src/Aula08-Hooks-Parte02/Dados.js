@@ -1,12 +1,31 @@
 import {useState} from "react";
-import Botao from "../Aula04/Botao";
+import {Button} from "react-bootstrap";
 
 
 function Dados() {
-    const [dado, setDado] = useState(0);
+    let [dado, setDado] = useState(0);
+
+    const incrementar = () => {
+        dado = dado + 1;
+        setDado(dado);
+    };
+
+    const decrementar = () => {
+        dado = dado - 1;
+        setDado(dado);
+    };
+
+
     return (<div>
         <p>Valor: {dado}</p>
-        <Botao nome="Hook-Parte2" />
+
+        <Button as="a" onClick={incrementar} variant="success">
+            Incrementar
+        </Button>
+
+        <Button as="a" onClick={decrementar} variant="danger">
+            Decrementar
+        </Button>
     </div>);
 }
 

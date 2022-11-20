@@ -1,6 +1,7 @@
 import Titulo from "./Titulo";
 import Topicos from "./Topicos";
 import Dados from "./Dados";
+import {Button} from "react-bootstrap";
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
             <Topicos descricao="Aula sobre hooks" topicos={lista}/>
             <hr/>
             <Dados/>
+
+
         </div>
     );
 }
